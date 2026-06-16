@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Khusnul Hatimah Azzahra</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#f8fafc;
+    overflow-x:hidden;
+}
+
+:root{
+    --primary:#7c3aed;
+    --secondary:#a855f7;
+    --accent:#c084fc;
+    --dark:#0f172a;
+    --card:#1e293b;
+    --text:#e2e8f0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(var(--primary),var(--secondary));
+    border-radius:20px;
+}
+
+/* Navbar */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    backdrop-filter:blur(15px);
+    background:rgba(15,23,42,0.8);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 25px;
+}
+
+.logo{
+    font-size:1.3rem;
+    font-weight:700;
+    color:white;
+}
+
+.logo span{
+    color:var(--accent);
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--accent);
+}
+
+/* Hero */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px 80px;
+    background:
+    radial-gradient(circle at top left,#7c3aed33,transparent 40%),
+    radial-gradient(circle at bottom right,#c084fc22,transparent 40%);
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:1.2;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    background:linear-gradient(90deg,#c084fc,#7c3aed);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    color:#cbd5e1;
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 32px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    border-radius:50px;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 30px rgba(124,58,237,.35);
+}
+
+/* Section */
+section{
+    padding:90px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.2rem;
+    margin-bottom:50px;
+}
+
+.section-title span{
+    color:var(--accent);
+}
+
+/* About */
+.about{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:40px;
+    align-items:center;
+}
+
+.profile-card{
+    background:var(--card);
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.avatar{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin:auto;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:3rem;
+    font-weight:bold;
+}
+
+.profile-card h3{
+    margin-top:20px;
+}
+
+.about-content{
+    background:var(--card);
+    border-radius:25px;
+    padding:35px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+
+.info-item{
+    background:#0f172a;
+    padding:15px;
+    border-radius:15px;
+}
+
+/* Cards */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:var(--card);
+    padding:30px;
+    border-radius:22px;
+    transition:.4s;
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(124,58,237,.15);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:var(--accent);
+}
+
+.card p{
+    color:#cbd5e1;
+}
+
+/* Skills */
+.skills{
+    display:grid;
+    gap:20px;
+}
+
+.skill{
+    background:var(--card);
+    padding:20px;
+    border-radius:15px;
+}
+
+.bar{
+    height:10px;
+    background:#334155;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:10px;
+}
+
+.progress{
+    height:100%;
+    background:linear-gradient(90deg,var(--primary),var(--accent));
+}
+
+/* Contact */
+.contact-box{
+    background:var(--card);
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+}
+
+.contact-box p{
+    margin:10px 0;
+    color:#cbd5e1;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid rgba(255,255,255,.08);
+    color:#94a3b8;
+}
+
+@media(max-width:900px){
+
+.about{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+.info-grid{
+    grid-template-columns:1fr;
+}
+
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">Khusnul<span>.</span></div>
+
+        <div class="nav-links">
+            <a href="#about">Tentang</a>
+            <a href="#experience">Pengalaman</a>
+            <a href="#achievement">Pencapaian</a>
+            <a href="#skills">Keahlian</a>
+            <a href="#contact">Kontak</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Halo, Saya <span>Khusnul Hatimah Azzahra</span></h1>
+        <p>
+            Mahasiswa yang berfokus pada pengembangan teknologi digital,
+            desain kreatif, dan inovasi berbasis data untuk menciptakan
+            solusi yang berdampak positif.
+        </p>
+
+        <a href="#about" class="btn">Lihat Profil</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">Tentang <span>Saya</span></h2>
+
+        <div class="about">
+
+            <div class="profile-card">
+                <div class="avatar">K</div>
+                <h3>Khusnul Hatimah Azzahra</h3>
+                <p>Mahasiswa</p>
+            </div>
+
+            <div class="about-content">
+                <h3>Bio</h3>
+                <p>
+                    Saya adalah mahasiswa yang memiliki minat besar dalam dunia
+                    teknologi, desain digital, dan pengembangan produk inovatif.
+                    Selama masa studi, saya aktif mengikuti berbagai proyek
+                    kolaboratif, kompetisi teknologi, serta kegiatan organisasi.
+                    Saya percaya bahwa kreativitas dan kemampuan analitis dapat
+                    berjalan beriringan untuk menghasilkan solusi yang bermanfaat
+                    bagi masyarakat.
+                </p>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>Nama</strong><br>
+                        Khusnul Hatimah Azzahra
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Jenis Kelamin</strong><br>
+                        Perempuan
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Status</strong><br>
+                        Mahasiswa
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Domisili</strong><br>
+                        Makassar, Indonesia (Fiktif)
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Email</strong><br>
+                        khusnulazzahra@mail.com
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Bahasa</strong><br>
+                        Indonesia, Inggris
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="container">
+        <h2 class="section-title">Pengalaman <span>Kerja</span></h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>UI/UX Design Intern</h3>
+                <p>
+                    PT Digital Nusantara (2024)
+                    <br><br>
+                    Berkontribusi dalam perancangan antarmuka aplikasi mobile,
+                    melakukan riset pengguna, dan membuat prototype interaktif
+                    untuk meningkatkan pengalaman pengguna.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Content & Media Specialist</h3>
+                <p>
+                    Creative Labs Indonesia (2023 - 2024)
+                    <br><br>
+                    Mengelola strategi konten digital, desain media sosial,
+                    serta meningkatkan engagement audiens melalui kampanye kreatif.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Project Assistant</h3>
+                <p>
+                    Innovation Hub Academy (2022 - 2023)
+                    <br><br>
+                    Membantu koordinasi proyek edukasi berbasis teknologi,
+                    pengelolaan data, dan dokumentasi kegiatan lintas tim.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="achievement">
+    <div class="container">
+        <h2 class="section-title">Pencapaian & <span>Karir</span></h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Best Innovation Award 2024</h3>
+                <p>
+                    Memenangkan penghargaan atas pengembangan platform edukasi
+                    digital yang membantu proses pembelajaran interaktif.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Top 10 National Startup Challenge</h3>
+                <p>
+                    Berhasil membawa tim masuk 10 besar kompetisi startup nasional
+                    dengan konsep aplikasi berbasis kecerdasan buatan.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Young Digital Leader</h3>
+                <p>
+                    Dipilih sebagai salah satu mahasiswa inspiratif yang aktif
+                    dalam pengembangan komunitas teknologi dan inovasi.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title">Keahlian <span>Profesional</span></h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                UI/UX Design
+                <div class="bar">
+                    <div class="progress" style="width:92%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                Web Development
+                <div class="bar">
+                    <div class="progress" style="width:85%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                Digital Marketing
+                <div class="bar">
+                    <div class="progress" style="width:80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                Data Analysis
+                <div class="bar">
+                    <div class="progress" style="width:75%"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Kontak <span>Saya</span></h2>
+
+        <div class="contact-box">
+            <h3>Mari Terhubung</h3>
+
+            <p>Email : khusnulazzahra@mail.com</p>
+            <p>LinkedIn : linkedin.com/in/khusnulazzahra</p>
+            <p>Instagram : @khusnulazzahra</p>
+            <p>Website : www.khusnulazzahra.com</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Khusnul Hatimah Azzahra — Portfolio Website.
+</footer>
+
+<script>
+window.addEventListener("scroll", () => {
+    const nav = document.querySelector("nav");
+
+    if(window.scrollY > 50){
+        nav.style.background = "rgba(15,23,42,0.95)";
+    }else{
+        nav.style.background = "rgba(15,23,42,0.8)";
+    }
+});
+</script>
+
+</body>
+</html>

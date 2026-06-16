@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO ON-PAGE BASIC -->
+    <title>Anti Gravity - Teknologi Simulator & Manipulasi Gravitasi Masa Depan</title>
+    <meta name="description" content="Jelajahi teknologi anti gravity dan simulator ruang hampa udara tercanggih abad ini. Rasakan sensasi melangkah tanpa bobot bersama teknologi Gemini AI.">
+    <meta name="keywords" content="anti gravity, teknologi gravitasi, simulator luar angkasa, zero gravity engine, teknologi masa depan, gemini ai">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Anti Gravity Project">
+    <link rel="canonical" href="https://www.antigravityproject.com/">
+
+    <!-- SEO OPEN GRAPH (Untuk Optimasi Sosial Media) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Anti Gravity - Teknologi Simulator & Manipulasi Gravitasi Masa Depan">
+    <meta property="og:description" content="Jelajahi teknologi anti gravity dan simulator ruang hampa udara tercanggih. Daftar uji coba simulator tanpa bobot sekarang!">
+    <meta property="og:url" content="https://www.antigravityproject.com/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anti Gravity - Teknologi Simulator">
+    <meta name="twitter:description" content="Rasakan sensasi melangkah tanpa bobot bersama teknologi Gemini AI.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/box.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #0b0c10;
+            color: #c5c6c7;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920') no-repeat center center/cover;
+            padding: 100px 0;
+        }
+        .text-cyan {
+            color: #66fcf1;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary">
+        <div class="container">
+            <a class="navbar-brand text-cyan fw-bold" href="#">🚀 ANTI-GRAVITY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#teknologi">Teknologi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section text-center text-white">
+        <div class="container my-5">
+            <h1 class="display-4 fw-bold text-cyan">Melangkah Tanpa Bobot</h1>
+            <p class="lead">Eksplorasi teknologi manipulasi gravitasi tercanggih di abad ini.</p>
+            
+            <button class="btn btn-outline-info btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#joinModal">
+                Ikuti Uji Coba
+            </button>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>Pengumuman:</strong> Pendaftaran simulator generasi terbaru ke-5 kini telah dibuka!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <section id="teknologi" class="my-5">
+            <h2 class="text-center mb-4 text-cyan">Teknologi Utama</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100 border-secondary">
+                        <div class="card-body">
+                            <h5 class="card-title text-cyan">Zero-G Engine</h5>
+                            <p class="card-text">Mesin pembalik polaritas medan magnet bumi untuk menciptakan area hampa tarikan.</p>
+                            <span class="badge bg-danger">Hot Tech</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100 border-secondary">
+                        <div class="card-body">
+                            <h5 class="card-title text-cyan">Quantum Boots</h5>
+                            <p class="card-text">Sepatu khusus penyeimbang massa tubuh agar pengguna tetap stabil saat melayang.</p>
+                            <span class="badge bg-success">Ready</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100 border-secondary">
+                        <div class="card-body">
+                            <h5 class="card-title text-cyan">Atmosphere Stabilizer</h5>
+                            <p class="card-text">Menjaga tekanan oksigen di sekitar ruangan anti-gravitasi tetap optimal bagi paru-paru.</p>
+                            <span class="badge bg-secondary">Update</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-secondary my-5">
+
+        <section id="galeri" class="my-5">
+            <h2 class="text-center mb-4 text-cyan">Galeri Simulator</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div id="gravityCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded shadow">
+                            <div class="carousel-item active">
+                                <!-- SEO OPTIMIZATION: Alt text diubah agar kaya kata kunci -->
+                                <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?q=80&w=800&auto=format&fit=crop" class="d-block w-100" alt="Simulator luar angkasa dengan teknologi anti gravity" style="height: 400px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <!-- SEO OPTIMIZATION: Alt text diubah agar kaya kata kunci -->
+                                <img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=800&auto=format&fit=crop" class="d-block w-100" alt="Uji coba ruangan tanpa bobot zero gravity" style="height: 400px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#gravityCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#gravityCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-secondary my-5">
+
+        <section id="faq" class="my-5">
+            <h2 class="text-center mb-4 text-cyan">Pertanyaan Umum (FAQ)</h2>
+            <div class="accordion accordion-flush" id="faqAccordion">
+                <div class="accordion-item bg-dark text-white border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-cyan" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            Apakah aman untuk pemula?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-white-50">
+                            Sangat aman! Setiap sesi uji coba dipandu oleh instruktur profesional dan menggunakan sistem pengaman ganda.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-dark text-white border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-cyan" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            Berapa lama durasi melayang dalam simulator?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-white-50">
+                            Setiap sesi standar berlangsung selama 45 menit di dalam ruang utama.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <h5 class="text-cyan mb-2">Progress Pembangunan Lab Ke-6</h5>
+            <div class="progress" style="height: 25px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 75%">75% Selesai</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-center py-4 text-white-50 border-top border-secondary">
+        <p class="mb-0">&copy; 2026 Anti Gravity Project. Dibuat menggunakan Bootstrap & Gemini AI.</p>
+    </footer>
+
+    <div class="modal fade" id="joinModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-cyan">Formulir Uji Coba</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-content p-3">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label text-dark">Nama Lengkap</label>
+                            <input type="text" class="form-control" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-dark">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="email" class="form-control" placeholder="email@contoh.com" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-info w-100">Kirim Pendaftaran</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

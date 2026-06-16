@@ -175,6 +175,7 @@ section{
     border:1px solid rgba(255,255,255,.05);
 }
 
+/* Avatar Foto Profil */
 .avatar{
     width:150px;
     height:150px;
@@ -184,8 +185,20 @@ section{
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:3rem;
-    font-weight:bold;
+    overflow:hidden; /* Memastikan foto bulat sempurna */
+    border:3px solid var(--accent); /* Bingkai bersinar */
+    box-shadow:0 0 20px rgba(192, 132, 252, 0.3);
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover; /* Mencegah gambar menjadi gepeng */
+    transition:transform 0.5s ease;
+}
+
+.avatar:hover img{
+    transform:scale(1.1); /* Efek zoom interaktif saat diarahkan kursor */
 }
 
 .profile-card h3{
@@ -343,7 +356,10 @@ footer{
         <div class="about">
 
             <div class="profile-card">
-                <div class="avatar">K</div>
+                <!-- INTEGRASI FOTO PROFIL BARU -->
+                <div class="avatar">
+                    <img src="WhatsApp Image 2026-06-16 at 12.14.03.jpeg" alt="Foto Profil Profesional Khusnul Hatimah Azzahra">
+                </div>
                 <h3>Khusnul Hatimah Azzahra</h3>
                 <p>Mahasiswa</p>
             </div>
@@ -378,7 +394,7 @@ footer{
 
                     <div class="info-item">
                         <strong>Domisili</strong><br>
-                        Makassar, Indonesia (Fiktif)
+                        Makassar, Indonesia
                     </div>
 
                     <div class="info-item">
